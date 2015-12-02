@@ -5,9 +5,6 @@
 gasdfg adfg 
 
 ```js
-my code
+var testing : String = "";
+var tester = testing.length;
 ```
-
-    var testing : String = "";
-    var tester = testing.length;
-    
