@@ -10,7 +10,7 @@ function Update ()
 	var direction = theTarget.transform.position - this.transform.position;
 	var TAngle = Vector3.Angle(direction,this.transform.forward);
 	
-	if(hit.transform.name == "Cylinder")
+	if (hit.transform.name == "Cylinder")
 	{
 		var rayHitDistance = hit.distance;
 		inSight = true;
@@ -19,7 +19,7 @@ function Update ()
 	{
 		inSight = false;
 	}
-	if(rayHitDistance <= viewDistance && inSight == true)
+	if (rayHitDistance <= viewDistance && inSight == true)
 	{
 		if(TAngle <= 30)
 		{
@@ -30,7 +30,7 @@ function Update ()
 			Debug.DrawRay(this.transform.position,direction,Color.red);
 		}
 	}
-	if(rayHitDistance > viewDistance || inSight == false)
+	if (rayHitDistance > viewDistance || inSight == false)
 	{
 		Debug.DrawRay(this.transform.position,direction,Color.red);
 	}
