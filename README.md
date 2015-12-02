@@ -4,7 +4,7 @@
 
 gasdfg adfg 
 
-```
+```js
 my code
 ```
 
